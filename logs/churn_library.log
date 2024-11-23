@@ -1,0 +1,73 @@
+2024-11-23 16:55:55,586 - root - INFO - INFO: Importing data
+2024-11-23 16:55:55,600 - root - INFO - SUCCESS: Data imported successfully
+2024-11-23 16:55:55,600 - root - INFO - Testing import_data: SUCCESS
+2024-11-23 16:55:55,601 - root - INFO - INFO: Importing data
+2024-11-23 16:55:55,612 - root - INFO - SUCCESS: Data imported successfully
+2024-11-23 16:55:55,612 - root - INFO - INFO: Creating target column
+2024-11-23 16:55:55,617 - root - INFO - INFO: Performing EDA
+2024-11-23 16:55:55,617 - root - INFO - INFO: Shape of the data: (10127, 22)
+2024-11-23 16:55:55,619 - root - INFO - INFO: Missing data columns: Series([], dtype: int64)
+2024-11-23 16:55:55,629 - root - INFO - INFO: Data description:          Unnamed: 0     CLIENTNUM  ...  Avg_Utilization_Ratio         Churn
+count  10127.000000  1.012700e+04  ...           10127.000000  10127.000000
+mean    5063.000000  7.391776e+08  ...               0.274894      0.160660
+std     2923.557422  3.690378e+07  ...               0.275691      0.367235
+min        0.000000  7.080821e+08  ...               0.000000      0.000000
+25%     2531.500000  7.130368e+08  ...               0.023000      0.000000
+50%     5063.000000  7.179264e+08  ...               0.176000      0.000000
+75%     7594.500000  7.731435e+08  ...               0.503000      0.000000
+max    10126.000000  8.283431e+08  ...               0.999000      1.000000
+
+[8 rows x 17 columns]
+2024-11-23 16:55:55,650 - root - INFO - INFO: Creating images of EDA
+2024-11-23 16:55:56,390 - root - INFO - INFO: Testing perform_eda: SUCCESS
+2024-11-23 16:55:56,390 - root - INFO - INFO: Testing perform_eda: The images folder was created
+2024-11-23 16:55:56,390 - root - INFO - INFO: Testing perform_eda: The age histogram was created
+2024-11-23 16:55:56,390 - root - INFO - INFO: Testing perform_eda: The heatmap was created
+2024-11-23 16:55:56,390 - root - INFO - INFO: Testing perform_eda: The heatmap target was created
+2024-11-23 16:55:56,390 - root - INFO - INFO: Testing perform_eda: The heatmap target was created
+2024-11-23 16:55:56,390 - root - INFO - INFO: Testing perform_eda: The heatmap target was created
+2024-11-23 16:55:56,391 - root - INFO - INFO: Importing data
+2024-11-23 16:55:56,402 - root - INFO - SUCCESS: Data imported successfully
+2024-11-23 16:55:56,402 - root - INFO - INFO: Creating target column
+2024-11-23 16:55:56,404 - root - INFO - INFO: Encoding categorical columns
+2024-11-23 16:55:56,409 - root - INFO - INFO: Testing encoder_helper: SUCCESS
+2024-11-23 16:55:56,409 - root - INFO - INFO: dataframe contains columns: Index(['Unnamed: 0', 'CLIENTNUM', 'Customer_Age', 'Gender', 'Dependent_count',
+       'Education_Level', 'Marital_Status', 'Income_Category', 'Card_Category',
+       'Months_on_book', 'Total_Relationship_Count', 'Months_Inactive_12_mon',
+       'Contacts_Count_12_mon', 'Credit_Limit', 'Total_Revolving_Bal',
+       'Avg_Open_To_Buy', 'Total_Amt_Chng_Q4_Q1', 'Total_Trans_Amt',
+       'Total_Trans_Ct', 'Total_Ct_Chng_Q4_Q1', 'Avg_Utilization_Ratio',
+       'Churn', 'Gender_encoded', 'Education_Level_encoded',
+       'Marital_Status_encoded', 'Income_Category_encoded',
+       'Card_Category_encoded'],
+      dtype='object')
+2024-11-23 16:55:56,410 - root - INFO - INFO: Testing encoder_helper: The number of rows is the same
+2024-11-23 16:55:56,410 - root - INFO - INFO: Testing encoder_helper: The columns were encoded
+2024-11-23 16:55:56,411 - root - INFO - INFO: Importing data
+2024-11-23 16:55:56,421 - root - INFO - SUCCESS: Data imported successfully
+2024-11-23 16:55:56,421 - root - INFO - INFO: Creating target column
+2024-11-23 16:55:56,423 - root - INFO - INFO: Encoding categorical columns
+2024-11-23 16:55:56,428 - root - INFO - INFO: Testing perform_feature_engineering: SUCCESS
+2024-11-23 16:55:56,428 - root - INFO - INFO: Testing perform_feature_engineering:                      The number of dataframes is correct
+2024-11-23 16:55:56,428 - root - INFO - INFO: Testing perform_feature_engineering:                      The number of rows is the same
+2024-11-23 16:55:56,428 - root - INFO - INFO: Testing perform_feature_engineering:                      The number of columns is correct
+2024-11-23 16:55:56,428 - root - INFO - INFO: Testing perform_feature_engineering:                      The number of rows is the same in target
+2024-11-23 16:55:56,429 - root - INFO - INFO: Importing data
+2024-11-23 16:55:56,439 - root - INFO - SUCCESS: Data imported successfully
+2024-11-23 16:55:56,440 - root - INFO - INFO: Creating target column
+2024-11-23 16:55:56,442 - root - INFO - INFO: Encoding categorical columns
+2024-11-23 16:55:56,446 - root - INFO - INFO: Training models
+2024-11-23 16:57:12,172 - root - INFO - INFO: Best parameters for Random Forest: {'criterion': 'gini', 'max_depth': 100, 'max_features': 'sqrt', 'n_estimators': 500}
+2024-11-23 16:57:12,172 - root - INFO - INFO: Predicting on training and testing data RF
+2024-11-23 16:57:12,394 - root - INFO - INFO: Predicting on training and testing data LR
+2024-11-23 16:57:12,395 - root - INFO - Saving metrics
+2024-11-23 16:57:12,766 - root - INFO - INFO: Saving model in rfc_model.pkl
+2024-11-23 16:57:12,825 - root - INFO - INFO: Saving model in lrc_model.pkl
+2024-11-23 16:57:12,827 - root - INFO - INFO: Testing train_models: SUCCESS
+2024-11-23 16:57:12,827 - root - INFO - INFO: Testing train_models: The images folder was created
+2024-11-23 16:57:12,827 - root - INFO - INFO: Testing train_models: The roc curve was created
+2024-11-23 16:57:12,827 - root - INFO - INFO: Testing train_models: The classification report                      was created for random forest
+2024-11-23 16:57:12,827 - root - INFO - INFO: Testing train_models: The classification report                      was created for logistic regression
+2024-11-23 16:57:12,827 - root - INFO - INFO: Testing train_models: The models folder was created
+2024-11-23 16:57:12,827 - root - INFO - INFO: Testing train_models: The random forest model was created
+2024-11-23 16:57:12,827 - root - INFO - INFO: Testing train_models: The logistic regression model was created
