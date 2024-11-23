@@ -1,7 +1,7 @@
 # library doc string
 """
 Refactored library for churn prediction
-Author: Ivan Gorban
+Author: Ivan
 Date: 2024-11-22
 """
 

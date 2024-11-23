@@ -1,5 +1,5 @@
 """
-Author: Ivan Gorban
+Author: Ivan
 Date: 2024-11-22
 
 Testing module for churn_library.py
